@@ -43,3 +43,4 @@ EXTERNAL_IP=$(gcloud compute instances describe $VM_NAME \
 echo "VM created: $VM_NAME"
 echo "Access at: http://$EXTERNAL_IP:6080"
 echo "Wait 2-3 minutes for container to start"
+echo "To delete the VM, run: gcloud compute instances delete ${VM_NAME} --project=${PROJECT_ID} --zone=${ZONE} --quiet"
